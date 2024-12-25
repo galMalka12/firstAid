@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+  font-family: "Open Sans", serif;
+}
+
+.header {
+  background-image:url("../img/header.png");
+  background-size: cover; /* מכסה את האזור כולו */
+  background-repeat: no-repeat; /* מונע חזרה */
+  background-position: center; /* מיקום התמונה במרכז */
+  height: 200px; /* גובה הכותרת */
+  width: 100%;
+
+}
+
+.card img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+ :root {
+   font-size: 80%;
+ }
+img{
+    max-width: 100%;
+}
+#call911 {
+  display: flex;
+  align-items: center; /* ממרכז את התמונה והטקסט באותו גובה */
+  justify-content: center; /* ממרכז את הכל */
+  background-color: #324046;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  padding: 3px;
+}
+
+#call911 img {
+  margin-left: 10px; /* רווח בין התמונה לטקסט */
+  width: 20px; /* גודל מותאם של האייקון */
+  height: 20px; /* גודל מותאם של האייקון */
+}
+#searchBox { 
+  width: 60vw;
+  height: 7vh;
+  border-radius: 15px;
+  border: 1.3px solid black;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+#searchBtn {
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+}
+#resetBtn {
+  border-radius: 15px;
+  border: 1px solid black;
+  width: 8.5vw;
+  height: 6.5vh ;
+  background-color: #324046;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.card {
+  margin: 15px auto; /* ריווח בין הכרטיסים */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0.1, 0.1);
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+ 
+}
+
+.card img {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 60px; /* מתאים את הגודל של האייקון */
+  height: 60px;
+  margin-bottom: 15px; /* רווח בין התמונה לתוכן */
+}
+#itemsContainer {
+  
+  flex-wrap: wrap; 
+  gap: 15px;
+  padding: 15px;
+  background-color: #F2F2F2;
+}
+
+.card-title { 
+  font-size: 1.25rem;
+}
+.card-content {
+  font-size: 1rem;
+}
+.btn {
+  border-radius: 15px;
+  border: 1.5px solid #35C9BC;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: auto;
+  font-size: 1rem;
+  color: black;
+  font-weight: 450;
+}
+
+.card .btn:hover {
+  background-color: #35C9BC;
+  color:white;
+}
+.header {
+  padding: 20px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px;
+  height: 30vh;
+}
+
+.search-container {
+  display: flex; 
+  gap: 10px;
+  position: relative;
+}
+
+
+#buttonContainer {
+  border: none;
+  background-color: transparent;
+} 
+
+h1 { 
+  text-align: center;
+}
+p {
+  font-size: 1.6rem;
+}
+/*תפריט ניווט*/
+.flex-container-nav.hide-mobile {
+  display: none;
+}
+.flex-container-nav a {
+  color: white;
+  text-decoration: none;
+ 
+  right: 0;
+}
+
+.flex-container-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  background-color:#35C9BC ;
+  height: 40vh;
+  width:30vw;
+  text-align: right;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  gap: 10px;
+  padding: 10px;
+}
+.dropdown-content a:hover {background-color: #008282;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 10px ;
+
+}
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  background-color: #35C9BC;
+  padding: 10px;
+}
+
+#arrowDown {
+  width: 10%;
+  height: 30%;
+}
+
+.download-section {
+  text-align: center;
+  margin: 20px 0;
+  height: 30vh;
+  padding: 10px;
+}
+
+.download-section img {
+  width: 100%;
+  height: 100%;
+  
+}
+/*כפתור הורדת הטופס*/
+.download-section .btn {
+  background-color: #35C9BC;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+#nav-button {
+  background-color: white;
+  border: none;
+}
+
+#nav-button img {
+  width: 20px;
+  height: 20px;
+}
+.download-section .btn:hover {
+  background-color: #008282;
+  cursor: pointer;
+}
+
+.download-section p {
+  margin-top: 2.5rem;
+  font-weight: 450;
+
+}
+
+#success {
+  display: none; /* הסתרת האלמנט כברירת מחדל */
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/*כפתור גלילה*/
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #35C9BC;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #008282;
+}
+
+
+/*מסך גדול*/
+@media only screen and (min-width: 600px) {
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    max-width: 20%;
+  }
+
+  /*תפריט ניווט*/
+  .flex-container-nav.hide-mobile {
+
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: unset;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    background-color: #35C9BC;
+ 
+  }
+  .flex-container-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+    height: 70vh;
+    position: fixed;
+    z-index: 1000;
+    align-items: flex-start;
+    right: 0;
+    padding: 15px;
+    width: 25%;
+    margin-bottom: 0;
+  }
+  /*כפתור המבורגר*/
+  #nav-button {
+    display: none;
+  }
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    background-color: #35C9BC;
+  }
+  .flex-container-nav.hide-mobile a{
+    font-size: 1rem;
+    color:white;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  #arrowDown {
+    width: 10%;
+    height: 10%;
+  }
+
+
+  
+  #resetBtn{
+    width: 4.5vw;
+  }
+  #searchBtn {
+    left: 6.5rem;
+  }
+}
